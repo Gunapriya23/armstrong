@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    int num=1634;
+	    int org=num;
+	    int digits=Integer.toString(num).length();
+	    int ams=0;
+	    while(num!=0){
+	        int digit=num%10;
+	        ams+=Math.pow(digit,digits);
+	        num=num/10;
+	        
+	    }
+       if(org==ams){
+           System.out.println("It is an Armstrong");
+    
+}
+       else{
+           System.out.println("Not an Armstrong");
+       }
+}
+
+}
