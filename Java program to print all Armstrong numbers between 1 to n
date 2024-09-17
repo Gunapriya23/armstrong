@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    int num=1634;
+	    
+	   
+	    
+	    for(int i=10;i<=num;i++){
+	        int org=i;
+	        int ams=0;
+	        int digits=Integer.toString(i).length();
+	        int temp=i;
+	    while(temp!=0){
+	        int digit=temp%10;
+	        ams+=Math.pow(digit,digits);
+	        temp=temp/10;
+	        
+	    }
+	    
+       if(org==ams){
+           System.out.println(i);
+       }
+}
+       
+}
+
+}
